@@ -5,7 +5,7 @@ import Thelastof from "./Thelastof.jsx"
 
 function Home() {
   return (
-    <div id="meuElemento" className="flex items-center gap-5">
+    <div className="flex justify-center gap-5">
       <Gta6 />
       <Godwar />
       <Spiderman />
