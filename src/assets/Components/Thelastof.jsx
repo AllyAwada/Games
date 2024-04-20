@@ -2,7 +2,7 @@ import Thelast from "/Thelast.jpg"
 
 function Thelastof() {
   return (
-    <div className="group bg-gray-800 w-72 h-40 hover:h-auto shadow-md rounded-md overflow-hidden">
+    <div className="group cursor-default bg-gray-800 w-72 h-40 hover:h-auto shadow-md rounded-md overflow-hidden">
       <div className="h-40 relative overflow-hidden">
         <img src={Thelast} className="absolute top-0 left-0 h-full w-full object-cover" />
       </div>

@@ -1,18 +1,23 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Link, } from "react-router-dom";
 
 import Header from "./assets/Components/Header.jsx"
 import Home from "./assets/Components/Home.jsx";
-import Gta6Detalhes from "./assets/Components/Gta6Detalhes.jsx";
 
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <div>Hello world!</div>,
+    },
+  ]);
   return (
     <main>
       <header>
         <Header />
       </header>
-      <div className="h-screen w-screen bg-slate-300 flex items-center">
-        <Gta6Detalhes />
+      <div className="h-screen w-screen bg-slate-300 fixed z-0">
+        <Home />
       </div>
     </main>
   )
