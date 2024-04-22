@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Spider from "/Spider.jpg"
 
 function Spiderman() {
@@ -9,7 +10,7 @@ function Spiderman() {
       <div className="p-5 opacity-0 group-hover:opacity-100 duration-[1s] -translate-y-6 group-hover:translate-y-0">
         <h4 className="font-semibold font-lexend text-2xl text-slate-300">Spider Man 2</h4>
         <p className="text-slate-300 pb-3"> Pendure-se, pule e plane com as novas Asas de Teia para percorrer a Nova York da Marvel. Alterne rapidamente entre Peter Parker e Miles Morales para jogar histórias diferentes e usar novos poderes épicos enquanto o infame vilão Venom ameaça a vida deles, das pessoas próximas a eles e toda a cidade.</p>
-        <a className="py-2 px-5 bg-slate-300 mt-2 w-fit rounded-md text-sm font-semibold text-gray-800 hover:bg-gray-500 hover:text-slate-300 transition duration-700" href="https://www.playstation.com/pt-br/games/marvels-spider-man-2/"> Saiba mais</a>
+        <Link className="py-2 px-5 bg-slate-300 mt-2 w-fit rounded-md text-sm font-semibold text-gray-800 hover:bg-gray-500 hover:text-slate-300 transition duration-700" to="/spiderMan"> Saiba mais</Link>
       </div>
     </div>
   )

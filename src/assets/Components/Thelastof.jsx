@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Thelast from "/Thelast.jpg"
 
 function Thelastof() {
@@ -9,7 +10,7 @@ function Thelastof() {
       <div className="p-5 opacity-0 group-hover:opacity-100 duration-[1s] -translate-y-6 group-hover:translate-y-0">
         <h4 className="font-semibold font-lexend text-2xl text-slate-300">The last of us</h4>
         <p className="font-lexend text-slate-300 pb-3">Em uma civilização devastada, em que infectados e sobreviventes veteranos estão à solta, Joel, um protagonista abatido, é contratado para tirar uma garota de 14 anos, Ellie, de uma zona de quarentena militar. No entanto, o que começa como um pequeno serviço se transforma em uma jornada brutal através do país.</p>
-        <a className="py-2 px-5 bg-slate-300 mt-2 w-fit rounded-md text-sm font-semibold text-gray-800 hover:bg-gray-500 hover:text-slate-300 transition duration-700" href="https://www.playstation.com/pt-br/games/the-last-of-us-part-i/"> Saiba Mais</a>
+        <Link className="py-2 px-5 bg-slate-300 mt-2 w-fit rounded-md text-sm font-semibold text-gray-800 hover:bg-gray-500 hover:text-slate-300 transition duration-700" to="/thelastofus"> Saiba Mais</Link>
       </div>
     </div>
   )

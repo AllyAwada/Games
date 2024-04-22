@@ -1,25 +1,36 @@
-import { createBrowserRouter, Link, } from "react-router-dom";
+import { createBrowserRouter, Link, RouterProvider} from "react-router-dom";
+import Home from "./Pages/Home.jsx";
+import Gta6Detalhes from "./Pages/Gta6Detalhes.jsx";
+import GodwarDetalhes from "./Pages/GodwarDetalhes.jsx";
+import ThelastofDetalhes from "./Pages/ThelastofDetalhes.jsx";
+import SpidermanDetalehs from "./Pages/SpidermanDetalhes.jsx";
 
-import Header from "./assets/Components/Header.jsx"
-import Home from "./assets/Components/Home.jsx";
-
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/gta6",
+    element: <Gta6Detalhes />,
+  },
+  {
+    path: "/godofwar",
+    element: <GodwarDetalhes />
+  },
+  {
+    path: "/spiderMan",
+    element: <SpidermanDetalehs />,
+  },
+  {
+    path: "/thelastofus",
+    element: <ThelastofDetalhes />,
+  },
+]);
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <div>Hello world!</div>,
-    },
-  ]);
   return (
-    <main>
-      <header>
-        <Header />
-      </header>
-      <div className="h-screen w-screen bg-slate-300 fixed z-0">
-        <Home />
-      </div>
-    </main>
+    <RouterProvider router={router} />
   )
 }
 
